@@ -9,11 +9,12 @@ struct books{ // DECLARING THE STRUCTURE TO STORE THE DETAILS ABOUT THE LIBRARY 
     char author[20];
     int year;
     int id;
-} Book;
+};
 
+struct books Book;
+struct books library[100];
+struct books newBook;
 
-
-Book library[100];
 int bookCount=0;
 
 
@@ -74,7 +75,6 @@ void createBook() // CREATION
         printf("Library is full, unable to add your book.\n");
         return;
     }
-    Book newBook;
   
   // Taking the details for the book
   
